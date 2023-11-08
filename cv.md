@@ -8,12 +8,14 @@
 
 ## ⚙️ Навыки
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - Sass
 - Bootstrap
 - JavaScript (Basics)
 - React (Beginner)
+- Webpack
+- Git
 
 ## 📚 Образование
 
