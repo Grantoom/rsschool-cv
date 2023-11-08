@@ -1,0 +1,18 @@
+h1 {
+    font-size: 20px;
+    color: blue;
+}
+
+p {
+    font-size: 15px;
+    color: red; 
+}
+
+.block {
+    display: flex;
+    background-color: chartreuse;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 30px;
+}
