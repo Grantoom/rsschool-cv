@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee-house</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Inter:wght@400;600&family=Raleway:ital,wght@0,300;0,900;1,500;1,900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="root">
+    
+    <div class="page">
+        <header class="header">
+            <nav class="header__navigation">
+                <div>
+                    <a href="#" class="header__link"><img src="images/logo.png" alt="header-logo" class="header__logo"></a>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#favorite">Favorite coffee</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#mobile">Mobile app</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#contact">Contact us</a>
+                    </li>
+                </ul>
+                <a href="#" class="header__button">
+                    <span>Menu</span>
+                    <img src="icons/coffee-cup.svg" alt="coffee-cup">
+                </a>
+            </nav>
+        </header>
+
+        <main class="main-content" id="main">
+
+            <section class="enjoy">
+                <video class="enjoy__video" autoplay muted loop>
+                    <source src="video/video.mp4" type="video/mp4">
+                </video>
+                <div class="enjoy__descr">
+                    <h1 class="enjoy__title"><span>Enjoy</span> premium coffee at our charming cafe</h1>
+                    <p class="enjoy__subtitle">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+                    <button class="enjoy__button">Menu</button>
+                </div>
+            </section>
+
+            <section class="favorite" id="favorite">
+                <h2 class="favorite__title">
+                    Choose your <span>favorite</span> coffee
+                </h2>
+                <div class="favorite__slider">
+                    <button><svg class="favorite__slider-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="#" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg></button>
+                    <div class="favorite__slider-content">
+                        <img src="images/coffee-slider-1.png" alt="slider-image-1">
+                        <h3 class="favorite__slider-title">S’mores Frappuccino</h3>
+                        <p class="favorite__slider-subtitle">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                        <h4 class="favorite__slider-price">$5.50</h4>
+                    </div>
+                    <button><svg class="favorite__slider-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="#" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg></button>
+                </div>
+                <div class="favorite__control">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <h2 class="about__title">Resource is <span>the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
+                <div class="about__photo">
+
+                   <div>
+                        <div class="about__block item1">
+                            <img src="images/about-1.png" alt="person1">
+                        </div>
+                        <div class="about__block item2">
+                            <img src="images/about-2.png" alt="person2">
+                        </div>
+                   </div>
+
+                    <div>
+                        <div class="about__block item3">
+                            <img src="images/about-3.png" alt="person3">
+                        </div>
+                        <div class="about__block item4">
+                            <img src="images/about-4.png" alt="person4">
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="mobile" id="mobile">
+                <div class="mobile__info">
+                    <h2 class="mobile__title"><span>Download</span> our apps to start ordering</h2>
+                    <p class="mobile__subtitle">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
+                    
+                    <div class="mobile__links">
+                        <a class="mobile__link">
+                            <img src="icons/appStore.svg" alt="apple">
+                            <div>
+                                <h3>Available on the</h3>
+                                <p>App Store</p>
+                            </div>
+                        </a>
+                        <a class="mobile__link">
+                            <img src="icons/googlePlay.svg" alt="google">
+                            <div>
+                                <h3>Available on</h3>
+                                <p>Google Play</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+                <img src="images/mobile-screens.png" alt="mobiles" class="mobile__img">
+            </section>
+        </main>
+
+        <main class="coffee-content" hidden id="menu">
+            <section class="offer">
+                <h1 class="offer__title">Behind each of our cups hides an <span>amazing surprise</span></h1>
+                <nav>
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Dessert</li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="grid">
+                <div class="grid__content">
+                    <div class="grid__box">
+                        <img src="images/coffee-1.png" alt="coffe1" class="grid__img">
+                    </div>
+                    <div class="grid__descr">
+                        <div>
+                            <h2 class="grid__title">Irish coffee</h2>
+                            <p class="grid__subtitle">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                        </div>
+                        <h3 class="grid__price">$7.00</h3>
+                    </div>
+                </div>
+                <div class="grid__content">
+                    <div class="grid__box">
+                        <img src="images/coffee-2.png" alt="coffe2" class="grid__img">
+                    </div>
+                    <div class="grid__descr">
+                        <div>
+                            <h2 class="grid__title">Kahlua coffee</h2>
+                            <p class="grid__subtitle">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+                        </div>
+                        <h3 class="grid__price">$7.00</h3>
+                    </div>
+                </div>
+                <div class="grid__content">
+                    <div class="grid__box">
+                        <img src="images/coffee-3.png" alt="coffe3" class="grid__img">
+                    </div>
+                    <div class="grid__descr">
+                        <div>
+                            <h2 class="grid__title">Honey raf</h2>
+                            <p class="grid__subtitle">Espresso with frothed milk, cream and aromatic honey</p>
+                        </div>
+                        <h3 class="grid__price">$5.50</h3>
+                    </div>
+                </div>
+                <div class="grid__content">
+                    <div class="grid__box">
+                        <img src="images/coffee-4.png" alt="coffe4" class="grid__img">
+                    </div>
+                    <div class="grid__descr">
+                        <div>
+                            <h2 class="grid__title">Ice cappuccino</h2>
+                            <p class="grid__subtitle">Cappuccino with soft thick foam in summer version with ice</p>
+                        </div>
+                        <h3 class="grid__price">$5.00</h3>
+                    </div>
+                </div>
+                <div class="grid__content">
+                    <div class="grid__box">
+                        <img src="images/coffee-5.png" alt="coffe5" class="grid__img">
+                    </div>
+                    <div class="grid__descr">
+                        <div>
+                            <h2 class="grid__title">Espresso</h2>
+                            <p class="grid__subtitle">Classic black coffee</p>
+                        </div>
+                        <h3 class="grid__price">$4.50</h3>
+                    </div>
+                </div>
+                <div class="grid__content">
+                    <div class="grid__box">
+                        <img src="images/coffee-6.png" alt="coffe6" class="grid__img">
+                    </div>
+                    <div class="grid__descr">
+                        <div>
+                            <h2 class="grid__title">Latte</h2>
+                            <p class="grid__subtitle">Espresso coffee with the addition of steamed milk and dense milk foam</p>
+                        </div>
+                        <h3 class="grid__price">$5.50</h3>
+                    </div>
+                </div>
+                <div class="grid__content">
+                    <div class="grid__box">
+                        <img src="images/coffee-7.png" alt="coffe7" class="grid__img">
+                    </div>
+                    <div class="grid__descr">
+                        <div>
+                            <h2 class="grid__title">Latte macchiato</h2>
+                            <p class="grid__subtitle">Espresso with frothed milk and chocolate</p>
+                        </div>
+                        <h3 class="grid__price">$5.50</h3>
+                    </div>
+                </div>
+                <div class="grid__content">
+                    <div class="grid__box">
+                        <img src="images/coffee-8.png" alt="coffe8" class="grid__img">
+                    </div>
+                    <div class="grid__descr">
+                        <div>
+                            <h2 class="grid__title">Coffee with cognac</h2>
+                            <p class="grid__subtitle">Fragrant black coffee with cognac and whipped cream</p>
+                        </div>
+                        <h3 class="grid__price">$6.50</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+            
+
+        <footer class="footer">
+            <div class="footer__info">
+                <h2 class="footer__title">Sip, Savor, Smile.<br><span>It’s coffee time!</span></h2>
+                <div class="footer__links">
+                    <a href="#"><svg class="footer__images" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z" stroke="#" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg></a>
+                    <a href="#"><svg class="footer__images" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z" stroke="#"/>
+                        <path d="M17.5 6.51L17.51 6.49889" stroke="#" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg></a>
+                    <a href="#"><svg class="footer__images" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" stroke="#" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg></a>
+                </div>
+            </div>
+            <div class="footer__contacts" id="contact">
+                <h3 class="footer__subtitle">Contact us</h3>
+                <nav>
+                    <ul>
+                        <li><a href="https://maps.app.goo.gl/W6jdrYbLg4jsJ1gV9" target=_blank>8558 Green Rd.,  LA</a></li>
+                        <li><a href="tel:+16035550123">+1 (603) 555-0123</a></li>
+                        <li>Mon-Sat: 9:00 AM – 23:00 PM</li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+.footer {
+    background-color: $background-container;
+    min-height: 250px;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        flex: 1 0 0;
+    }
+    &__title {
+        margin: 0;
+        color: $text-light;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        span {
+            font-style: italic;
+            color: $text-accent;
+        }
+    }
+    &__links{
+        display: flex;
+        gap: 12px;
+    }
+    &__images {
+        width: 24px;
+        height: 24px;
+        border: 1px solid $border-light;
+        padding: 17px;
+        border-radius: 100px;
+        stroke: $text-light;
+        transition: background-color .3s ease;
+        &:hover {
+            stroke: $text-dark;
+            stroke-width: 5%;
+            background-color: $background-body;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        flex: 1 0 0;
+        nav {
+            ul {
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                margin: 0;
+                padding-left: 30px;
+                a {
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
+                    padding-bottom: 4px;
+                    &:hover {
+                        background-size: 100% 2px;
+                    }
+                }
+                li {
+                    position: relative;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%;
+                    color: $text-light;
+                    margin-bottom: 4px;
+                    
+                    &:nth-child(1) {
+                        &::before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            left: -28px;
+                            top: -3px;
+                            width: 20px;
+                            height: 20px;
+                            background: url("../icons/marker.svg");
+                        }
+                    }
+                    &:nth-child(2) {
+                        &::before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            left: -28px;
+                            top: 0px;
+                            width: 20px;
+                            height: 20px;
+                            background: url("../icons/phone.svg");
+                        }
+                    }
+                    &:nth-child(3) {
+                        &::before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            left: -28px;
+                            top: 2px;
+                            width: 20px;
+                            height: 20px;
+                            background: url("../icons/clock.svg");
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $text-light;
+                    }
+                }
+            }
+        }
+    }
+    &__subtitle {
+        margin: 0;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        color: $text-light;
+    }
+}
