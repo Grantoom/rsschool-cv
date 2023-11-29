@@ -13,6 +13,9 @@
         border: 1px solid $border-light;
         border-radius: 40px;
         box-sizing: border-box;
+        &:hover img {
+            transform: scale(0.92);
+        }
     }
     &__box {
         width: 310px;
@@ -28,9 +31,7 @@
         height: 340px;
         border-radius: 40px;
         transition: transform 1s ease;
-        &:hover {
-            transform: scale(0.92);
-        }
+        
     }
     &__descr {
         display: flex;

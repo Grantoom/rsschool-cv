@@ -16,8 +16,10 @@
         align-self: stretch;
     }
     &__button {
+        padding: 0;
         padding-bottom: 4px;
-        text-decoration: none;
+        border: none;
+        background: none;
         color: $text-dark;
         display: flex;
         justify-content: center;
@@ -30,10 +32,6 @@
         background-image: linear-gradient(currentColor, currentColor);
         background-position: 50% 100%;
         background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .7s;
-        &:hover {
-            background-size: 100% 2px;
-        }
+        background-size: 100% 2px;
     }
 }

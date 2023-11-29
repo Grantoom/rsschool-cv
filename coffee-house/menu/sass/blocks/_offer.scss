@@ -40,7 +40,7 @@
             gap: 8px;
             border: 1px solid $border-light;
             border-radius: 100px;
-            transition: background-color .3s ease;
+            transition: background-color .6s ease;
             cursor: pointer;
             &:hover {
                 background-color: $background-container;
@@ -48,13 +48,16 @@
 
             }
             &:nth-child(1) {
+                background-color: $background-container;
+                color: $text-light;
+                cursor: default;
                 &::before {
                     content: '';
                     display: flex;
                     padding: 3px 7px;
                     justify-content: center;
                     align-items: center;
-                    background: url("../icons/coffee.svg") center no-repeat;
+                    background: url("../../icons/coffee.svg") center no-repeat;
                     width: 16px;
                     height: 24px;
                     border: 1px solid $border-light;
@@ -69,7 +72,7 @@
                     padding: 3px 7px;
                     justify-content: center;
                     align-items: center;
-                    background: url("../icons/tea.svg") center no-repeat;
+                    background: url("../../icons/tea.svg") center no-repeat;
                     width: 16px;
                     height: 24px;
                     border: 1px solid $border-light;
@@ -84,7 +87,7 @@
                     padding: 3px 7px;
                     justify-content: center;
                     align-items: center;
-                    background: url("../icons/dessert.svg") center no-repeat;
+                    background: url("../../icons/dessert.svg") center no-repeat;
                     width: 16px;
                     height: 24px;
                     border: 1px solid $border-light;

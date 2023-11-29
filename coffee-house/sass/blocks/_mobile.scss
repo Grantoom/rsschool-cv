@@ -53,17 +53,19 @@
         background-color: transparent;
         cursor: pointer;
         transition: background-color .3s ease;
+        svg {
+           fill: $text-dark;
+        }
         &:hover {
+            svg {
+                fill:$text-light;
+            }
             background-color: $background-container;
             div {
                 p, h3 {
                     color: $text-light;
                 }
             }
-        }
-        img {
-            width: 36px;
-            height: 36px;
         }
         div {
             display: flex;

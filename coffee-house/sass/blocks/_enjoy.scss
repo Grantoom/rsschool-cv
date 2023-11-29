@@ -45,35 +45,46 @@
         z-index: 2;
     }
     &__button {
-        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
         line-height: 150%;
         border-radius: 100px;
         width: 200px;
-        padding: 20px 78px;
-        justify-content: center;
-        align-items: center;
         border: none;
         text-decoration: none;
         cursor: pointer;
-        background-color: $background-body;
         color: $text-dark;
-        z-index: 2;
-        &::after {
-            content: "";
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            margin-left: 8px;
-            background: url('../icons/coffee-cup.svg') center center no-repeat;
-            background-size: cover;
-            opacity: 0;
-            transition: opacity 0.5s ease;
+        div {
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            width: 200px;
+            padding: 20px 78px;
+            border: none;
+            text-decoration: none;
+            background-color: $background-body;
+            gap: 8px;
         }
-        &:hover::after {
-            opacity: 1;
+        img {
+            opacity: 0;
+            width: 0;
+            transition: width 0.6s ease, opacity 0.6s ease;
+        }
+        &:hover {
+            img {
+                opacity: 1;
+                width: 100%;
+            }
         }
     }
+    
+    
+    
 }
