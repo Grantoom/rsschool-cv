@@ -12,6 +12,10 @@
     margin: 0 auto;
 }
 
+.hamburger {
+    display: none;
+}
+
 .page {
     max-width: 1360px;
     padding: 0 40px;
@@ -24,3 +28,5 @@
 @import './blocks/about';
 @import './blocks/mobile';
 @import './blocks/footer';
+
+@import './base/media';
