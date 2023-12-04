@@ -30,6 +30,7 @@
     .header {
         &__button {
             margin-top: 40px;
+            display: none;
             gap: 16px;
             align-items: center;
             span {
@@ -102,21 +103,15 @@
                 }
                 &:nth-child(2) {
                     transform: translateY(-4px) rotate(45deg);
-                }
-                   
-            }
-                
-        }
-            
+                }  
+            }   
+        }    
     }
-       
-
     .enjoy {
         &__descr {
             padding: 100px 60px;
         }
     }
-
     .favorite {
         &__title {
             text-align: center;
