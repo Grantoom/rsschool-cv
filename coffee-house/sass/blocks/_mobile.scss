@@ -8,7 +8,7 @@
         display: flex;
         gap: 40px;
         flex-direction: column;
-        width: 630px;
+        width: clamp(348px, 89.58vw, 850px);
         span {
             font-size: 60px;
             font-style: italic;
@@ -18,16 +18,19 @@
         }
     }
     &__img {
-        width: 630px;
-        height: 630px;
+        width: clamp(348px, 43vw, 630px);
+          
     }
     &__title {
         margin: 0;
-        font-size: 60px;
+        font-size: clamp(32px, 7.8vw, 60px);
         font-style: normal;
         font-weight: 600;
         line-height: 125%;
         color: $text-dark;
+        span {
+            font-size: clamp(32px, 7.8vw, 60px);
+        }
     }
     &__subtitle {
         margin: 0;

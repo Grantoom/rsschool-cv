@@ -63,13 +63,13 @@
     &__slider-content {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        max-width: 480px;
+        align-items: center;
+        width: clamp(348px, 62.5vw, 480px);
+        text-align: center;
         img {
             margin-bottom: 20px;
-            width: 480px;
-            height: 480px;
+            width: clamp(348px, 43.75vw, 480px);
         }
     }
     &__control {
