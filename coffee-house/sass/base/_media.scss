@@ -20,6 +20,9 @@
 
     .mobile {
         flex-direction: column;
+        img {
+            width: clamp(348px, 82vw, 630px);
+        }
     }
 
     .enjoy__button  {
@@ -215,12 +218,6 @@
         padding: 0 20px;
     }
 
-    .header {
-        &__menu {
-            padding: 0 16px;
-        }
-    }
-
     .enjoy {
         &__descr {
             padding: 60px 16px;
@@ -242,7 +239,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
             align-self: stretch;
         }
     }

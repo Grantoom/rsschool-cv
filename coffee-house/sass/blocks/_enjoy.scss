@@ -1,5 +1,5 @@
 .enjoy {
-    max-height: 644px;
+    height: clamp(552px, 89.58vw, 664px);
     border-radius: 40px;
     position: relative;
     &__descr {
