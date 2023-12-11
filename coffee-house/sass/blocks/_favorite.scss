@@ -44,7 +44,6 @@
             stroke: #E1D4C9;
         }
     }
-    
     &__slider-title, &__slider-price {
         font-size: 24px;
         font-style: normal;
@@ -81,12 +80,31 @@
             width: 40px;
             height: 4px;
             background-color: $border-light;
-            &:nth-child(1) {
-                background-color: $border-dark;
-            }
         }
-
+        .active {
+            background-color: #665f55;
+            background-size: 0 100px;
+            transition: background-size 1s ease;
+        }
+        
+        .active:hover {
+            background-size: 100% 100px;
+        }
     }
-
 }
+
+.slider {
+    width: clamp(348px, 64.75vw, 480px);
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider-line {
+    width: clamp(348px, 64.75vw, 480px);
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
 
