@@ -26,21 +26,28 @@
                           </svg>
                     </div>
                 </div>
+                
                 <ul class="menu">
                     <li class="menu__item">
-                        <a href="#favorite">Favorite coffee</a>
+                        <a class="scroll" href="#favorite">Favorite coffee</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#about">About</a>
+                        <a class="scroll" href="#about">About</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#mobile">Mobile app</a>
+                        <a class="scroll" href="#mobile">Mobile app</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#contact">Contact us</a>
+                        <a class="scroll" href="#contact">Contact us</a>
                     </li>
-                    
+                    <li class="menu__item">
+                        <a href="menu/index.html" class="header__button cup">
+                            <span>Menu</span>
+                            <img src="icons/coffee-cup.svg" alt="coffee-cup">
+                        </a>
+                    </li>
                 </ul>
+
                 <a href="menu/index.html" class="header__button">
                     <span>Menu</span>
                     <img src="icons/coffee-cup.svg" alt="coffee-cup">
@@ -72,21 +79,37 @@
                     Choose your <span>favorite</span> coffee
                 </h2>
                 <div class="favorite__slider">
-                    <button><svg class="favorite__slider-btn noHover" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <button class="slider__button_prev"><svg class="favorite__slider-btn noHover" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="#" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg></button>
-                    <div class="favorite__slider-content">
-                        <img src="images/coffee-slider-1.png" alt="slider-image-1">
-                        <h3 class="favorite__slider-title">S’mores Frappuccino</h3>
-                        <p class="favorite__slider-subtitle">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                        <h4 class="favorite__slider-price">$5.50</h4>
+                    <div class="slider">
+                        <div class="slider-line">
+                            <div class="favorite__slider-content slide">
+                                <img src="images/coffee-slider-1.png" alt="slider-image-1">
+                                <h3 class="favorite__slider-title">S’mores Frappuccino</h3>
+                                <p class="favorite__slider-subtitle">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                                <h4 class="favorite__slider-price">$5.50</h4>
+                            </div>
+                            <div class="favorite__slider-content">
+                                <img src="images/coffee-slider-2.png" alt="slider-image-1">
+                                <h3 class="favorite__slider-title">Caramel Macchiato</h3>
+                                <p class="favorite__slider-subtitle">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                                <h4 class="favorite__slider-price">$5.00</h4>
+                            </div>
+                            <div class="favorite__slider-content">
+                                <img src="images/coffee-slider-3.png" alt="slider-image-1">
+                                <h3 class="favorite__slider-title">Ice coffee</h3>
+                                <p class="favorite__slider-subtitle">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                                <h4 class="favorite__slider-price">$4.50</h4>
+                            </div>
+                        </div>
                     </div>
-                    <button><svg class="favorite__slider-btn noHover" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <button class="slider__button_next"><svg class="favorite__slider-btn noHover" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="#" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg></button>
                 </div>
                 <div class="favorite__control">
-                    <div></div>
+                    <div class="active"></div>
                     <div></div>
                     <div></div>
                 </div>
