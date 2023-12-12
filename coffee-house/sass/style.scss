@@ -1,0 +1,36 @@
+@import '../vendor/normalize.css';
+@import './base/variables';
+
+* {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.root {
+    max-width: 1440px;
+    background-color: $background-body;
+    margin: 0 auto;
+}
+
+.hamburger {
+    display: none;
+}
+
+.page {
+    max-width: 1360px;
+    padding: 0 40px;
+}
+
+.no-scroll {
+    overflow: clip;
+}
+
+@import './blocks/header';
+@import './blocks/menu';
+@import './blocks/enjoy';
+@import './blocks/favorite';
+@import './blocks/about';
+@import './blocks/mobile';
+@import './blocks/footer';
+
+@import './base/media';

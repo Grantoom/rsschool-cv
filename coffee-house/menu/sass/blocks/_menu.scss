@@ -1,0 +1,27 @@
+.menu {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    &__item {
+        padding-bottom: 4px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        color: $text-dark;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .7s;
+        &:hover {
+            background-size: 100% 2px;
+        }
+        a {
+            color: $text-dark;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.enjoy {
+    height: clamp(552px, 89.58vw, 664px);
+    border-radius: 40px;
+    position: relative;
+    &__descr {
+        padding: 100px;
+        display: flex;
+        max-width: 530px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        width: clamp(290px, 69vw, 530px);
+        height: 445px;
+       
+    }
+    &__video {
+        border-radius: 40px;
+        z-index: 1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    span {
+        font-size: clamp(42px, 9.375vw, 72px);
+        font-style: italic;
+        font-weight: 600;
+        line-height: 105%;
+        color: $text-accent;
+        z-index: 2;
+    }
+    &__title {
+        font-size: clamp(42px, 9.375vw, 72px);
+        margin: 0;
+        color: $text-light;
+        font-weight: 600;
+        line-height: 105%;
+        z-index: 2;
+    }
+    &__subtitle {
+        margin: 0;
+        font-size: clamp(16px, 9.375vw, 16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        color: $text-light;
+        z-index: 2;
+    }
+    &__button {
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        border-radius: 100px;
+        width: 200px;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        color: $text-dark;
+        div {
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            width: 200px;
+            padding: 20px 78px;
+            border: none;
+            text-decoration: none;
+            background-color: $background-body;
+            gap: 8px;
+        }
+        img {
+            opacity: 0;
+            width: 0;
+            transition: width 0.6s ease, opacity 0.6s ease;
+        }
+        &:hover {
+            img {
+                opacity: 1;
+                width: 100%;
+            }
+        }
+    }
+    
+    
+    
+}

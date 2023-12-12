@@ -1,0 +1,96 @@
+.mobile {
+    min-height: 630px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 100px;
+    &__info {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        width: clamp(348px, 89.58vw, 850px);
+        span {
+            font-size: 60px;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 125%;
+            color: $text-accent;
+        }
+    }
+    &__img {
+        width: clamp(348px, 42vw, 630px);
+          
+    }
+    &__title {
+        margin: 0;
+        font-size: clamp(32px, 7.8vw, 60px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        color: $text-dark;
+        span {
+            font-size: clamp(32px, 7.8vw, 60px);
+        }
+    }
+    &__subtitle {
+        margin: 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        color: $text-dark;
+    }
+    &__links {
+        display: flex;
+        gap: 20px;
+    }
+    &__link {
+        display: flex;
+        width: 200px;
+        padding: 12px 20px;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid #665F55;
+        border-radius: 100px;
+        box-sizing: border-box;
+        background-color: transparent;
+        cursor: pointer;
+        transition: background-color .3s ease;
+        svg {
+           fill: $text-dark;
+        }
+        &:hover {
+            svg {
+                fill:$text-light;
+            }
+            background-color: $background-container;
+            div {
+                p, h3 {
+                    color: $text-light;
+                }
+            }
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2px;
+            h3 {
+                margin: 0;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 140%;
+                color: $text-dark;         
+            }
+            p {
+                margin: 0;
+                color: $text-dark;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%;
+            }
+        }
+    }
+}

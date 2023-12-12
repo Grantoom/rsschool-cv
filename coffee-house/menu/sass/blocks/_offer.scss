@@ -1,0 +1,100 @@
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    min-height: 236px;
+    &__title {
+        margin: 0;
+        font-size: clamp(32px, 7.8vw ,60px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        color: $text-dark;
+        width: 800px;
+        text-align: center;
+        span {
+            font-style: italic;
+            color: $text-accent;
+        }
+    }
+    nav > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        color: $text-dark;
+        li {
+            display: flex;
+            padding: 8px 16px 8px 8px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid $border-light;
+            border-radius: 100px;
+            transition: background-color .6s ease;
+            cursor: pointer;
+            &:hover {
+                background-color: $background-container;
+                color: $text-light;
+
+            }
+            &:nth-child(1) {
+                background-color: $background-container;
+                color: $text-light;
+                cursor: default;
+                &::before {
+                    content: '';
+                    display: flex;
+                    padding: 3px 7px;
+                    justify-content: center;
+                    align-items: center;
+                    background: url("../../icons/coffee.svg") center no-repeat;
+                    width: 16px;
+                    height: 24px;
+                    border: 1px solid $border-light;
+                    border-radius: 100px;
+                    background-color: $border-light;
+                }
+            }
+            &:nth-child(2) {
+                &::before {
+                    content: '';
+                    display: flex;
+                    padding: 3px 7px;
+                    justify-content: center;
+                    align-items: center;
+                    background: url("../../icons/tea.svg") center no-repeat;
+                    width: 16px;
+                    height: 24px;
+                    border: 1px solid $border-light;
+                    border-radius: 100px;
+                    background-color: $border-light;
+                }
+            }
+            &:nth-child(3) {
+                &::before {
+                    content: '';
+                    display: flex;
+                    padding: 3px 7px;
+                    justify-content: center;
+                    align-items: center;
+                    background: url("../../icons/dessert.svg") center no-repeat;
+                    width: 16px;
+                    height: 24px;
+                    border: 1px solid $border-light;
+                    border-radius: 100px;
+                    background-color: $border-light;
+                }
+            }
+        }
+    }
+}

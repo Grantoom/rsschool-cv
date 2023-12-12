@@ -1,0 +1,112 @@
+.favorite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $text-dark;
+    margin: 100px 0;
+    &__title {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 125%;
+        margin: 0;
+        span {
+            font-size: 60px;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 125%;
+            color: $text-accent;
+        }
+    }
+    &__slider {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 40px;
+        button {
+            background-color: transparent;
+            border: none;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+        }
+    }
+    &__slider-btn {
+        border-radius: 50%;
+        border: 1px solid $border-dark;
+        padding: 17px;
+        width: 24px;
+        height: 24px;
+        transition: background-color .6s ease;
+        stroke: #403F3D;
+        &:hover {
+            background-color: $background-container;
+            stroke: #E1D4C9;
+        }
+    }
+    &__slider-title, &__slider-price {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        margin: 0;
+    }
+    &__slider-subtitle {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 16px 0;
+        text-align: center;
+    }
+    &__slider-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: clamp(348px, 62.5vw, 480px);
+        text-align: center;
+        img {
+            margin-bottom: 20px;
+            width: clamp(348px, 64.75vw, 480px);
+        }
+    }
+    &__control {
+        display: flex;
+        gap: 12px;
+        margin-top: 40px;
+        div {
+            border-radius: 100px;
+            width: 40px;
+            height: 4px;
+            background-color: $border-light;
+        }
+        .active {
+            background-color: #665f55;
+            background-size: 0 100px;
+            transition: background-size 1s ease;
+        }
+        
+    }
+}
+
+.slider {
+    width: clamp(348px, 64.75vw, 480px);
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider-line {
+    width: clamp(348px, 64.75vw, 480px);
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.point-full {
+    background-color: #665f55;
+    width: 0;
+    height: 100%;
+    transition: .1s;
+}
