@@ -4,6 +4,7 @@ const hamburger = document.querySelector('.hamburger');
 const mainPage = document.querySelector('.root');
 const headerBtns = document.querySelectorAll('.scroll');
 
+
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('hamburger_active');
     menu.classList.toggle('menu_active');
